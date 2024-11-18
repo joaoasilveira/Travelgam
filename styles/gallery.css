@@ -10,10 +10,11 @@
 @media (width >= 80em) {
   .photoGallery {
     padding-block: 1.5rem;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     gap: 1.5rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
     & img {
       height: 286px;
       width: 286px;
