@@ -1,0 +1,12 @@
+footer {
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (width >=80em) {
+  footer {
+    padding-inline: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

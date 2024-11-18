@@ -1,0 +1,54 @@
+.paddingYmd {
+  padding-block: var(--py-md);
+}
+
+.paddingYlg {
+  padding-block: var(--py-lg);
+}
+
+.paddingX {
+  padding-inline: var(--px-md)
+}
+
+.container {
+  --max-width: 360px;
+  width: min(var(--max-width), 100% - var(--px-ml) * 2);
+}
+
+.desktop-only {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap {
+  gap: 0.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80em;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+}

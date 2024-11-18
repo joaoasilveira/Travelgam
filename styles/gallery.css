@@ -1,0 +1,22 @@
+.photoGallery {
+  flex-direction: column;
+
+  img {
+    width: 328px;
+    height: 328px;
+  }
+}
+
+@media (width >= 80em) {
+  .photoGallery {
+    padding-block: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    & img {
+      height: 286px;
+      width: 286px;
+    }
+  }
+}

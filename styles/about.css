@@ -1,0 +1,47 @@
+.about {
+  background-color: var(--surface-color);
+  flex-direction: column;
+}
+
+.main {
+  flex-direction: column;
+}
+
+.biography {
+  flex-direction: column;
+}
+
+.profilePic {
+  width: 120px;
+  height: 120px;
+}
+
+.info {
+  flex-direction: column;
+}
+
+@media (width >= 80em) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .main {
+    flex-direction: row;
+    gap: 2rem;
+  }
+    
+  .profilePic {
+    width: 176px;
+    height: 176px;
+  }
+
+  .biography {
+    width: 384px;
+  }
+
+  .info {
+    width: 280px;
+  }
+}
